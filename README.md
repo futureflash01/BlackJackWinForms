@@ -1,6 +1,6 @@
 # 🃏 Blackjack Game (WinForms)
 
-A modern, animated Blackjack game built in C# using Windows Forms. Features smooth card dealing animations, sound effects, and a sleek dark-themed UI.
+A modern, animated Blackjack game built in C# using Windows Forms and .NET 8.0. Features smooth card dealing animations, sound effects, and a sleek dark-themed UI.
 
 ## 🎮 Features
 
@@ -12,7 +12,7 @@ A modern, animated Blackjack game built in C# using Windows Forms. Features smoo
 
 ## 🔧 How to Run
 
-1. Ensure you have the [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet) installed.
+1. Ensure you have the [.NET Desktop Runtime 8.0](https://dotnet.microsoft.com/en-us/download/dotnet) installed.
 2. Download the latest release from the [Releases](https://github.com/futureflash01/BlackjackWinForms/releases) page.
 3. Run the `BlackjackGame.exe` file.
 
