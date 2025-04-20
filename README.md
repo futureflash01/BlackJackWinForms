@@ -12,7 +12,7 @@ A modern, animated Blackjack game built in C# using Windows Forms and .NET 8.0. 
 
 ## 🔧 How to Run
 
-1. Ensure you have the [.NET Desktop Runtime 8.0](https://dotnet.microsoft.com/en-us/download/dotnet) installed.
+1. Ensure you have the [.NET Desktop Runtime 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) installed.
 2. Download the latest release from the [Releases](https://github.com/futureflash01/BlackjackWinForms/releases) page.
 3. Run the `BlackjackGame.exe` file.
 
