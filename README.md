@@ -38,4 +38,4 @@ You're free to use, modify, and distribute it — **as long as credit is given**
 
 ---
 
-🛠 Created with love by [FutureFlash] and the help of ChatGPT
+🛠 Created with love by **FutureFlash** and the help of *ChatGPT*
