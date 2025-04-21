@@ -144,7 +144,7 @@ namespace BlackjackGame.Forms
                 hiddenCardPictureBox = pb;
             }
 
-            try { dealCardSound?.Play(); } catch { }
+            try { dealCardSound?.Play(); } catch { } // I made all 'try-catch' functions a one-liner for better formatting
 
             await Task.Delay(150); // Smooth dealing feel
             UpdateHandValueLabels();
@@ -157,6 +157,7 @@ namespace BlackjackGame.Forms
                 pb.Size = new Size(130, 155); // Make the card appear slightly bigger
                 pb.Location = new Point(pb.Location.X - 5, pb.Location.Y - 5); // Slight lift
             }
+
             else
             {
                 pb.Size = new Size(125, 150); // Return to original size
@@ -179,6 +180,7 @@ namespace BlackjackGame.Forms
 
                 return img;
             }
+
             catch (Exception ex)
             {
                 Debug.WriteLine($"Error loading image for card {card.ID}: {ex.Message}");
@@ -189,9 +191,10 @@ namespace BlackjackGame.Forms
         private void btnHit_Click(object sender, EventArgs e)
         {
             DealCard(playerHand, pnlPlayerArea); // Ideally, this function should be awaited. However, you can't 'await' a void function
+
             if (playerHand.GetValue() > 21)
             {
-                try { defeatSound?.Play(); } catch { } // I made all 'try-catch' functions a one-liner for better formatting
+                try { defeatSound?.Play(); } catch { } // Another one-liner for formatting
 
                 EndGame("Player busts! Dealer wins.");
             }
@@ -251,7 +254,7 @@ namespace BlackjackGame.Forms
 
             if (message.Contains("You win!"))
             {
-                try { victorySound?.Play(); } catch { }
+                try { victorySound?.Play(); } catch { } // Even more one-liners. You gotta love 'em
             }
 
             else if (message.Contains("Push!"))
@@ -299,11 +302,13 @@ namespace BlackjackGame.Forms
                     displayedValue++;
                     lbl.Text = $"{prefix}: {displayedValue}";
                 }
+
                 else if (displayedValue > toValue)
                 {
                     displayedValue--;
                     lbl.Text = $"{prefix}: {displayedValue}";
                 }
+
                 else
                 {
                     chipTimer.Stop();
@@ -352,6 +357,7 @@ namespace BlackjackGame.Forms
                 SystemSounds.Beep.Play();
                 AboutForm.ShowDialog();
             }
+
             else
             {
                 SystemSounds.Beep.Play();

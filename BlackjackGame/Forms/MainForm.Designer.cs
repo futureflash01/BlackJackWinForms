@@ -141,7 +141,7 @@ namespace BlackjackGame.Forms
             versionLabel.Name = "versionLabel";
             versionLabel.Size = new Size(28, 15);
             versionLabel.TabIndex = 8;
-            versionLabel.Text = "v1.0";
+            versionLabel.Text = "v1.1";
             // 
             // madeByLabel
             // 

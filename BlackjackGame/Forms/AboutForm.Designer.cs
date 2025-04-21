@@ -93,6 +93,7 @@
             Name = "AboutForm";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "About";
+            Load += AboutForm_Load;
             ((System.ComponentModel.ISupportInitialize)logoPB).EndInit();
             ResumeLayout(false);
         }
