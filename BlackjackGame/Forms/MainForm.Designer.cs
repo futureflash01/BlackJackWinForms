@@ -35,6 +35,13 @@ namespace BlackjackGame.Forms
             madeByLabel = new System.Windows.Forms.Label();
             blackjackMenuStrip = new System.Windows.Forms.MenuStrip();
             aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            defaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            darkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            hiddenLabel1 = new System.Windows.Forms.Label();
+            hiddenLabel2 = new System.Windows.Forms.Label();
+            hiddenLabel3 = new System.Windows.Forms.Label();
+            changingThemeWillRestartGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             blackjackMenuStrip.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,7 +54,7 @@ namespace BlackjackGame.Forms
             btnHit.ForeColor = Color.White;
             btnHit.Location = new Point(368, 267);
             btnHit.Name = "btnHit";
-            btnHit.Size = new Size(120, 40);
+            btnHit.Size = new Size(120, 50);
             btnHit.TabIndex = 3;
             btnHit.Text = "Hit";
             btnHit.UseVisualStyleBackColor = false;
@@ -62,7 +69,7 @@ namespace BlackjackGame.Forms
             btnStand.ForeColor = Color.White;
             btnStand.Location = new Point(508, 267);
             btnStand.Name = "btnStand";
-            btnStand.Size = new Size(120, 40);
+            btnStand.Size = new Size(120, 50);
             btnStand.TabIndex = 4;
             btnStand.Text = "Stand";
             btnStand.UseVisualStyleBackColor = false;
@@ -89,7 +96,7 @@ namespace BlackjackGame.Forms
             lblPlayerValue.AutoSize = true;
             lblPlayerValue.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             lblPlayerValue.ForeColor = Color.LightGreen;
-            lblPlayerValue.Location = new Point(40, 300);
+            lblPlayerValue.Location = new Point(23, 302);
             lblPlayerValue.Name = "lblPlayerValue";
             lblPlayerValue.Size = new Size(89, 25);
             lblPlayerValue.TabIndex = 0;
@@ -100,7 +107,7 @@ namespace BlackjackGame.Forms
             lblDealerValue.AutoSize = true;
             lblDealerValue.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             lblDealerValue.ForeColor = Color.LightSkyBlue;
-            lblDealerValue.Location = new Point(40, 30);
+            lblDealerValue.Location = new Point(24, 32);
             lblDealerValue.Name = "lblDealerValue";
             lblDealerValue.Size = new Size(88, 25);
             lblDealerValue.TabIndex = 1;
@@ -120,17 +127,17 @@ namespace BlackjackGame.Forms
             // pnlPlayerArea
             // 
             pnlPlayerArea.BackColor = Color.Transparent;
-            pnlPlayerArea.Location = new Point(40, 330);
+            pnlPlayerArea.Location = new Point(23, 330);
             pnlPlayerArea.Name = "pnlPlayerArea";
-            pnlPlayerArea.Size = new Size(920, 160);
+            pnlPlayerArea.Size = new Size(965, 170);
             pnlPlayerArea.TabIndex = 6;
             // 
             // pnlDealerArea
             // 
             pnlDealerArea.BackColor = Color.Transparent;
-            pnlDealerArea.Location = new Point(40, 60);
+            pnlDealerArea.Location = new Point(23, 60);
             pnlDealerArea.Name = "pnlDealerArea";
-            pnlDealerArea.Size = new Size(920, 160);
+            pnlDealerArea.Size = new Size(965, 170);
             pnlDealerArea.TabIndex = 7;
             // 
             // versionLabel
@@ -141,7 +148,7 @@ namespace BlackjackGame.Forms
             versionLabel.Name = "versionLabel";
             versionLabel.Size = new Size(28, 15);
             versionLabel.TabIndex = 8;
-            versionLabel.Text = "v1.1";
+            versionLabel.Text = "v1.2";
             // 
             // madeByLabel
             // 
@@ -159,7 +166,7 @@ namespace BlackjackGame.Forms
             // blackjackMenuStrip
             // 
             blackjackMenuStrip.BackColor = Color.FromArgb(35, 35, 35);
-            blackjackMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { aboutToolStripMenuItem });
+            blackjackMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { aboutToolStripMenuItem, themeToolStripMenuItem });
             blackjackMenuStrip.Location = new Point(0, 0);
             blackjackMenuStrip.Name = "blackjackMenuStrip";
             blackjackMenuStrip.Size = new Size(1000, 25);
@@ -178,16 +185,86 @@ namespace BlackjackGame.Forms
             aboutToolStripMenuItem.MouseEnter += aboutToolStripMenuItem_MouseEnter;
             aboutToolStripMenuItem.MouseLeave += aboutToolStripMenuItem_MouseLeave;
             // 
+            // themeToolStripMenuItem
+            // 
+            themeToolStripMenuItem.BackColor = Color.FromArgb(80, 80, 80);
+            themeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { changingThemeWillRestartGameToolStripMenuItem, defaultToolStripMenuItem, darkToolStripMenuItem });
+            themeToolStripMenuItem.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            themeToolStripMenuItem.ForeColor = Color.WhiteSmoke;
+            themeToolStripMenuItem.Name = "themeToolStripMenuItem";
+            themeToolStripMenuItem.Size = new Size(62, 21);
+            themeToolStripMenuItem.Text = "Theme";
+            themeToolStripMenuItem.MouseEnter += themeToolStripMenuItem_MouseEnter;
+            themeToolStripMenuItem.MouseLeave += themeToolStripMenuItem_MouseLeave;
+            // 
+            // defaultToolStripMenuItem
+            // 
+            defaultToolStripMenuItem.BackColor = Color.FromArgb(80, 80, 80);
+            defaultToolStripMenuItem.ForeColor = Color.WhiteSmoke;
+            defaultToolStripMenuItem.Name = "defaultToolStripMenuItem";
+            defaultToolStripMenuItem.Size = new Size(290, 22);
+            defaultToolStripMenuItem.Text = "Default";
+            defaultToolStripMenuItem.Click += defaultToolStripMenuItem_Click;
+            // 
+            // darkToolStripMenuItem
+            // 
+            darkToolStripMenuItem.BackColor = Color.FromArgb(80, 80, 80);
+            darkToolStripMenuItem.ForeColor = Color.WhiteSmoke;
+            darkToolStripMenuItem.Name = "darkToolStripMenuItem";
+            darkToolStripMenuItem.Size = new Size(290, 22);
+            darkToolStripMenuItem.Text = "Dark";
+            darkToolStripMenuItem.Click += darkToolStripMenuItem_Click;
+            // 
+            // hiddenLabel1
+            // 
+            hiddenLabel1.Location = new Point(0, 25);
+            hiddenLabel1.Name = "hiddenLabel1";
+            hiddenLabel1.Size = new Size(41, 32);
+            hiddenLabel1.TabIndex = 11;
+            hiddenLabel1.Text = " ";
+            hiddenLabel1.Click += hiddenLabel1_Click;
+            hiddenLabel1.DoubleClick += hiddenLabel1_DoubleClick;
+            // 
+            // hiddenLabel2
+            // 
+            hiddenLabel2.Location = new Point(368, 25);
+            hiddenLabel2.Name = "hiddenLabel2";
+            hiddenLabel2.Size = new Size(260, 32);
+            hiddenLabel2.TabIndex = 12;
+            hiddenLabel2.Text = " ";
+            hiddenLabel2.Click += hiddenLabel2_Click;
+            // 
+            // hiddenLabel3
+            // 
+            hiddenLabel3.Location = new Point(901, 25);
+            hiddenLabel3.Name = "hiddenLabel3";
+            hiddenLabel3.Size = new Size(99, 32);
+            hiddenLabel3.TabIndex = 13;
+            hiddenLabel3.Text = " ";
+            hiddenLabel3.Click += hiddenLabel3_Click;
+            // 
+            // changingThemeWillRestartGameToolStripMenuItem
+            // 
+            changingThemeWillRestartGameToolStripMenuItem.BackColor = Color.FromArgb(80, 80, 80);
+            changingThemeWillRestartGameToolStripMenuItem.Enabled = false;
+            changingThemeWillRestartGameToolStripMenuItem.ForeColor = Color.WhiteSmoke;
+            changingThemeWillRestartGameToolStripMenuItem.Name = "changingThemeWillRestartGameToolStripMenuItem";
+            changingThemeWillRestartGameToolStripMenuItem.Size = new Size(290, 22);
+            changingThemeWillRestartGameToolStripMenuItem.Text = "Changing theme will restart game!";
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 30, 30);
             ClientSize = new Size(1000, 551);
+            Controls.Add(lblDealerValue);
+            Controls.Add(hiddenLabel3);
+            Controls.Add(hiddenLabel2);
+            Controls.Add(hiddenLabel1);
             Controls.Add(madeByLabel);
             Controls.Add(versionLabel);
             Controls.Add(lblPlayerValue);
-            Controls.Add(lblDealerValue);
             Controls.Add(lblStatus);
             Controls.Add(btnHit);
             Controls.Add(btnStand);
@@ -213,5 +290,12 @@ namespace BlackjackGame.Forms
         private System.Windows.Forms.Label madeByLabel;
         private System.Windows.Forms.MenuStrip blackjackMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.Label hiddenLabel1;
+        private System.Windows.Forms.Label hiddenLabel2;
+        private System.Windows.Forms.Label hiddenLabel3;
+        private System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem defaultToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem darkToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changingThemeWillRestartGameToolStripMenuItem;
     }
 }

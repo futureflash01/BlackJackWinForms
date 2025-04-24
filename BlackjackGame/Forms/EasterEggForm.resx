@@ -117,22 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="descriptionLabel.Text" xml:space="preserve">
-    <value>BlackJack is a common card game played in casinos.
-I did my best to recreate this game in my beloved C# language. I used ChatGPT to help me with the UI layout and some parts of the logic.
-
-I disabled any form of betting/saving scores. I do not want anyone playing this game to develop a habit of gambling! Gambling is not a joke and has ruined many lives. I want this mini-game to be friendly and non-competitive. It should only be played for fun.
-___________________________________________________________________________</value>
-  </data>
-  <data name="madebyLabel.Text" xml:space="preserve">
-    <value>Made by FutureFlash on 4/18/2025
-
-v1.0 was started at 11:57 AM and finished at 5:09 PM (MST).
-Total Time: 5 hours and 12 minutes. This
-includes form design, programming, implementing
-game logic, etc.
-
-Last Update: 4/24/2025 at 4:37 AM (MST)</value>
+  <data name="criticalErrorLabel.Text" xml:space="preserve">
+    <value>If you see this, that means the card image resources
+do NOT exist for whatever reason, even though they're
+literally embedded in the EXE file itself. I don't even know
+how that would be possible. You should not see this
+error message at all. If you do, please re-install from my GitHub:
+https://github.com/futureflash01/BlackJackWinForms</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

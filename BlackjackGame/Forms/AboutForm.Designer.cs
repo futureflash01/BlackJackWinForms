@@ -61,15 +61,14 @@
             // 
             madebyLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 7F, System.Drawing.FontStyle.Bold);
             madebyLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            madebyLabel.Location = new System.Drawing.Point(301, 203);
+            madebyLabel.Location = new System.Drawing.Point(301, 202);
             madebyLabel.Name = "madebyLabel";
-            madebyLabel.Size = new System.Drawing.Size(601, 83);
+            madebyLabel.Size = new System.Drawing.Size(601, 107);
             madebyLabel.TabIndex = 2;
-            madebyLabel.Text = "Made by FutureFlash on 4/18/2025 \r\n\r\nStarted at 11:57 AM and finished at 5:09 PM (MST).\r\nTotal Time: 5 hours and 12 minutes. This\r\nincludes form design, programming, implementing\r\ngame logic, etc.";
+            madebyLabel.Text = resources.GetString("madebyLabel.Text");
             // 
             // logoPB
             // 
-            logoPB.Image = Properties.Resources.AppIcon;
             logoPB.Location = new System.Drawing.Point(9, 8);
             logoPB.Name = "logoPB";
             logoPB.Size = new System.Drawing.Size(280, 280);
@@ -81,7 +80,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(903, 299);
+            ClientSize = new System.Drawing.Size(903, 311);
             Controls.Add(logoPB);
             Controls.Add(okButton);
             Controls.Add(madebyLabel);
@@ -93,7 +92,6 @@
             Name = "AboutForm";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "About";
-            Load += AboutForm_Load;
             ((System.ComponentModel.ISupportInitialize)logoPB).EndInit();
             ResumeLayout(false);
         }

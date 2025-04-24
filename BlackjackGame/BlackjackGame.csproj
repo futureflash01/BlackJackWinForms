@@ -5,6 +5,13 @@
     <UseWPF>false</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>Resources\AppIcon\AppIcon.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Version>1.2.0</Version>
+    <Description>BlackJack game in WinForms and C#</Description>
+    <PackageIcon>AppIcon.png</PackageIcon>
+    <Copyright>FutureFlash</Copyright>
+    <Company>FutureFlash</Company>
+    <PackageProjectUrl>https://github.com/futureflash01/BlackJackWinForms</PackageProjectUrl>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Resources\AppIcon\AppIcon.ico" />
@@ -25,5 +32,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Resources\AppIcon\AppIcon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 </Project>

@@ -13,6 +13,8 @@ namespace BlackjackGame.Forms
     public partial class MainForm : Form
     {
         private Deck deck;
+        private int easterEggCount = 0;
+        private bool isDarkTheme = false;
 
         private Hand playerHand;
         private Hand dealerHand;
@@ -26,7 +28,7 @@ namespace BlackjackGame.Forms
         private SoundPlayer defeatSound = new SoundPlayer(Properties.Resources.Defeat);
         private SoundPlayer tieSound = new SoundPlayer(Properties.Resources.Tie);
 
-        #region Make Window Title Bar Dark
+        #region Dark Title Bar
 
         // Code below was copied from https://stackoverflow.com/questions/57124243/winforms-dark-title-bar-on-windows-10 . Thank you Jonas Kohl <3
         [DllImport("dwmapi.dll")]
@@ -62,7 +64,10 @@ namespace BlackjackGame.Forms
         public MainForm()
         {
             InitializeComponent();
-            UseImmersiveDarkMode(this.Handle, true); // Enable Dark Mode for title bar ONLY
+
+            // Enable Dark Mode for title bar ONLY. Read "Dark Title Bar" code region from above to learn more
+            UseImmersiveDarkMode(this.Handle, true);
+
             StartNewGame();
         }
 
@@ -101,6 +106,9 @@ namespace BlackjackGame.Forms
 
             btnPlayAgain.Visible = false;
 
+            // Change UI colors accordingly
+            SetupColors();
+
             // Deal player card 1
             await DealCard(playerHand, pnlPlayerArea);
 
@@ -117,36 +125,110 @@ namespace BlackjackGame.Forms
             UpdateHandValueLabels();
         }
 
-        private async Task DealCard(Hand hand, Panel targetPanel, bool isFaceDown = false)
+        private void SetupColors()
         {
-            Card card = deck.DrawCard();
-            hand.AddCard(card);
-
-            PictureBox pb = new PictureBox
+            // This sets up the UI colors to match the current theme
+            if (isDarkTheme)
             {
-                Size = new Size(125, 150),
-                SizeMode = PictureBoxSizeMode.Zoom,
-                Image = isFaceDown ? Properties.Resources.Back : GetCardImage(card),
-                BackColor = Color.Transparent,
-                Left = (hand.Cards.Count - 1) * 120,
-                Top = 10,
-                Cursor = Cursors.Hand
-            };
+                btnHit.BackColor = Color.FromArgb(20, 20, 20);
+                btnStand.BackColor = Color.FromArgb(20, 20, 20);
+                btnPlayAgain.BackColor = Color.FromArgb(20, 20, 20);
 
-            pb.MouseEnter += (s, e) => HoverCardEffect(pb, true);
-            pb.MouseLeave += (s, e) => HoverCardEffect(pb, false);
+                btnHit.FlatAppearance.BorderColor = Color.WhiteSmoke;
+                btnStand.FlatAppearance.BorderColor = Color.WhiteSmoke;
+                btnPlayAgain.FlatAppearance.BorderColor = Color.WhiteSmoke;
 
-            targetPanel.Controls.Add(pb);
+                btnHit.FlatAppearance.BorderSize = 1;
+                btnStand.FlatAppearance.BorderSize = 1;
+                btnPlayAgain.FlatAppearance.BorderSize = 1;
 
-            // Save reference to the hidden dealer card if applicable
-            if (targetPanel == pnlDealerArea && isFaceDown && hiddenCardPictureBox == null)
-            {
-                hiddenCardPictureBox = pb;
+                lblStatus.ForeColor = Color.FromArgb(150, 150, 150);
+
+                lblPlayerValue.ForeColor = Color.FromArgb(225, 225, 225);
+                lblDealerValue.ForeColor = Color.FromArgb(225, 225, 225);
             }
 
-            try { dealCardSound?.Play(); } catch { } // I made all 'try-catch' functions a one-liner for better formatting
+            else
+            {
+                btnHit.BackColor = Color.FromArgb(0, 120, 215);
+                btnStand.BackColor = Color.FromArgb(192, 64, 0);
+                btnPlayAgain.BackColor = Color.SeaGreen;
 
-            await Task.Delay(150); // Smooth dealing feel
+                btnHit.FlatAppearance.BorderSize = 0;
+                btnStand.FlatAppearance.BorderSize = 0;
+                btnPlayAgain.FlatAppearance.BorderSize = 0;
+
+                lblStatus.ForeColor = Color.Gold;
+
+                lblPlayerValue.ForeColor = Color.LightGreen;
+                lblDealerValue.ForeColor = Color.LightSkyBlue;
+            }
+        }
+
+        private async Task DealCard(Hand hand, Panel targetPanel, bool isFaceDown = false)
+        {
+            if (isDarkTheme)
+            {
+                Card card = deck.DrawCard();
+                hand.AddCard(card);
+
+                PictureBox pb = new PictureBox
+                {
+                    Size = new Size(107, 150),
+                    SizeMode = PictureBoxSizeMode.Zoom,
+                    Image = isFaceDown ? Properties.Resources.Back_Dark : GetCardImage(card),
+                    BackColor = Color.Transparent,
+                    Left = (hand.Cards.Count - 1) * 120,
+                    Top = 10,
+                    Cursor = Cursors.Hand
+                };
+
+                pb.MouseEnter += (s, e) => HoverCardEffect(pb, true);
+                pb.MouseLeave += (s, e) => HoverCardEffect(pb, false);
+
+                targetPanel.Controls.Add(pb);
+
+                // Save reference to the hidden dealer card if applicable
+                if (targetPanel == pnlDealerArea && isFaceDown && hiddenCardPictureBox == null)
+                {
+                    hiddenCardPictureBox = pb;
+                }
+            }
+
+            else
+            {
+                Card card = deck.DrawCard();
+                hand.AddCard(card);
+
+                PictureBox pb = new PictureBox
+                {
+                    Size = new Size(107, 150),
+                    SizeMode = PictureBoxSizeMode.Zoom,
+                    Image = isFaceDown ? Properties.Resources.Back : GetCardImage(card),
+                    BackColor = Color.Transparent,
+                    Left = (hand.Cards.Count - 1) * 120,
+                    Top = 10,
+                    Cursor = Cursors.Hand
+                };
+
+                pb.MouseEnter += (s, e) => HoverCardEffect(pb, true);
+                pb.MouseLeave += (s, e) => HoverCardEffect(pb, false);
+
+                targetPanel.Controls.Add(pb);
+
+                // Save reference to the hidden dealer card if applicable
+                if (targetPanel == pnlDealerArea && isFaceDown && hiddenCardPictureBox == null)
+                {
+                    hiddenCardPictureBox = pb;
+                }
+            }
+
+            // I made all 'try-catch' functions a one-liner for better formatting
+            try { dealCardSound?.Play(); } catch { }
+
+            // Smooth dealing feel
+            await Task.Delay(150);
+
             UpdateHandValueLabels();
         }
 
@@ -154,14 +236,20 @@ namespace BlackjackGame.Forms
         {
             if (isHovered)
             {
-                pb.Size = new Size(130, 155); // Make the card appear slightly bigger
-                pb.Location = new Point(pb.Location.X - 5, pb.Location.Y - 5); // Slight lift
+                // Make the card appear slightly bigger
+                pb.Size = new Size(117, 160);
+                
+                // Slight lift
+                pb.Location = new Point(pb.Location.X - 3, pb.Location.Y - 3);
             }
 
             else
             {
-                pb.Size = new Size(125, 150); // Return to original size
-                pb.Location = new Point(pb.Location.X + 5, pb.Location.Y + 5); // Return to original position
+                // Return to original size
+                pb.Size = new Size(107, 150);
+                
+                // Return to original position
+                pb.Location = new Point(pb.Location.X + 3, pb.Location.Y + 3);
             }
         }
 
@@ -169,32 +257,50 @@ namespace BlackjackGame.Forms
         {
             try
             {
-                Debug.WriteLine($"Attempting to load image for card: {card.ID}");
-                var img = (Image)Properties.Resources.ResourceManager.GetObject(card.ID);
-
-                if (img == null)
+                if (isDarkTheme)
                 {
-                    Debug.WriteLine($"Image for card {card.ID} not found! Using fallback.");
-                    img = Properties.Resources.Back; // Fallback image if not found
+
+                    var img = (Image)Properties.Resources.ResourceManager.GetObject(card.ID + "_Dark");
+
+                    if (img == null)
+                    {
+                        // Fallback image if not found
+                        img = Properties.Resources.Back_Dark;
+                    }
+
+                    return img;
                 }
 
-                return img;
+                else
+                {
+                    var img = (Image)Properties.Resources.ResourceManager.GetObject(card.ID);
+
+                    if (img == null)
+                    {
+                        // Fallback image if not found
+                        img = Properties.Resources.Back;
+                    }
+
+                    return img;
+                }
             }
 
             catch (Exception ex)
             {
-                Debug.WriteLine($"Error loading image for card {card.ID}: {ex.Message}");
-                return Properties.Resources.Back; // Fallback
+                // Fallback
+                return Properties.Resources.Back;
             }
         }
 
         private void btnHit_Click(object sender, EventArgs e)
         {
-            DealCard(playerHand, pnlPlayerArea); // Ideally, this function should be awaited. However, you can't 'await' a void function
+            // Ideally, this function should be awaited. However, you can't 'await' a void function
+            DealCard(playerHand, pnlPlayerArea);
 
             if (playerHand.GetValue() > 21)
             {
-                try { defeatSound?.Play(); } catch { } // Another one-liner for formatting
+                // Another one-liner for formatting
+                try { defeatSound?.Play(); } catch { }
 
                 EndGame("Player busts! Dealer wins.");
             }
@@ -209,8 +315,11 @@ namespace BlackjackGame.Forms
 
             while (dealerHand.GetValue() < 17)
             {
-                DealCard(dealerHand, pnlDealerArea); // As mentioned before, you can't 'await' a void function
-                Application.DoEvents(); // Ensure UI is caught up
+                // As mentioned before, you can't 'await' a void function
+                DealCard(dealerHand, pnlDealerArea);
+
+                // Ensure UI is caught up
+                Application.DoEvents();
                 System.Threading.Thread.Sleep(500);
             }
 
@@ -231,9 +340,9 @@ namespace BlackjackGame.Forms
                 if (dealerHand.Cards.Count > 1)
                 {
                     var secondCard = dealerHand.Cards[1];
-                    Debug.WriteLine("Revealing hidden dealer card: " + secondCard.ID);
 
-                    Application.DoEvents(); // Ensure UI is caught up
+                    // Ensure UI is caught up
+                    Application.DoEvents();
                     hiddenCardPictureBox.Image = GetCardImage(secondCard);
                     hiddenCardPictureBox.Invalidate();
                     hiddenCardPictureBox.Refresh();
@@ -254,7 +363,8 @@ namespace BlackjackGame.Forms
 
             if (message.Contains("You win!"))
             {
-                try { victorySound?.Play(); } catch { } // Even more one-liners. You gotta love 'em
+                // Even more one-liners. You gotta love 'em
+                try { victorySound?.Play(); } catch { }
             }
 
             else if (message.Contains("Push!"))
@@ -292,8 +402,10 @@ namespace BlackjackGame.Forms
 
         private void AnimateChipStack(Label lbl, int fromValue, int toValue, string prefix)
         {
-            Timer chipTimer = new Timer { Interval = 15 }; // Adjust the animation speed
             int displayedValue = fromValue;
+
+            // Adjust the animation speed
+            Timer chipTimer = new Timer { Interval = 15 };
 
             chipTimer.Tick += (s, e) =>
             {
@@ -321,9 +433,12 @@ namespace BlackjackGame.Forms
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            blackjackMenuStrip.Renderer = new NoHighlightRenderer(); // Custom renderer preventing default Windows behavior form changing ToolStripMenuItem hover color. This is used for the 'About' button
+            // Custom renderer preventing default Windows behavior form changing ToolStripMenuItem hover color. This is used for the 'About' button
+            blackjackMenuStrip.Renderer = new NoHighlightRenderer();
+            defaultToolStripMenuItem.Checked = true;
 
-            foreach (Control c in this.Controls) // Got tired of changing each button's properties to change the cursor to a hand when hovered over
+            // Got tired of changing each button's cursor to a hand
+            foreach (Control c in this.Controls)
             {
                 if (c is Button)
                 {
@@ -334,9 +449,11 @@ namespace BlackjackGame.Forms
 
         private void madeByLabel_Click(object sender, EventArgs e)
         {
-            Process.Start(new ProcessStartInfo { FileName = "https://youtube.com/@FutureFlash", UseShellExecute = true }); // Extra stuff for DotNet Core
+            // Regular 'Process.Start("URL")' doesn't work in newer DotNet Core versions. Extra code is needed
+            Process.Start(new ProcessStartInfo { FileName = "https://youtube.com/@FutureFlash", UseShellExecute = true });
         }
 
+        // I know this is a extra, but I focus on tiny details to make the UI responsive and look as nice as I can
         private void aboutToolStripMenuItem_MouseEnter(object sender, EventArgs e)
         {
             this.Cursor = Cursors.Hand;
@@ -347,13 +464,23 @@ namespace BlackjackGame.Forms
             this.Cursor = Cursors.Default;
         }
 
+        private void themeToolStripMenuItem_MouseEnter(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.Hand;
+        }
+
+        private void themeToolStripMenuItem_MouseLeave(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.Default;
+        }
+
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form AboutForm = new AboutForm(versionLabel.Text);
+            Form AboutForm = new AboutForm(versionLabel.Text, isDarkTheme);
 
             if (AboutForm.IsDisposed)
             {
-                AboutForm = new AboutForm(versionLabel.Text);
+                AboutForm = new AboutForm(versionLabel.Text, isDarkTheme);
                 SystemSounds.Beep.Play();
                 AboutForm.ShowDialog();
             }
@@ -363,6 +490,76 @@ namespace BlackjackGame.Forms
                 SystemSounds.Beep.Play();
                 AboutForm.ShowDialog();
             }
+        }
+
+        private void hiddenLabel1_Click(object sender, EventArgs e)
+        {
+            // // hmmmm.... [part 1]
+            easterEggCount++;
+        }
+
+        private void hiddenLabel2_Click(object sender, EventArgs e)
+        {
+            // hmmmm.... [part 2]
+            easterEggCount++;
+        }
+
+        private void hiddenLabel3_Click(object sender, EventArgs e)
+        {
+            // hmmmm.... [part 3]
+            easterEggCount++;
+
+            if (easterEggCount == 3)
+            {
+                Form EasterEggForm = new EasterEggForm();
+
+                if (EasterEggForm.IsDisposed)
+                {
+                    EasterEggForm = new EasterEggForm();
+                    SystemSounds.Beep.Play();
+                    EasterEggForm.Show();
+                }
+
+                else
+                {
+                    SystemSounds.Beep.Play();
+                    EasterEggForm.Show();
+                }
+            }
+        }
+
+        private void hiddenLabel1_DoubleClick(object sender, EventArgs e)
+        {
+            easterEggCount = 0;
+            StartNewGame();
+        }
+
+        // Once again, I got this from StackOverflow. Link: https://stackoverflow.com/questions/13603654/check-only-one-toolstripmenuitem . Huge thanks to Julio Borges <3
+        // This method ensures that only one theme is selected at a time. Of course, Windows Forms doesn't support this by default, which is why I had to use StackOverflow for help
+        private void UncheckOtherToolStripMenuItems(ToolStripMenuItem selectedMenuItem)
+        {
+            selectedMenuItem.Checked = true;
+
+            foreach (var toolStripMenuItem in from object item in selectedMenuItem.Owner.Items let toolStripMenuItem = item as ToolStripMenuItem where toolStripMenuItem != null where !item.Equals(selectedMenuItem) select toolStripMenuItem)
+            {
+                toolStripMenuItem.Checked = false;
+            }
+        }
+
+        private void defaultToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            isDarkTheme = false;
+
+            UncheckOtherToolStripMenuItems((ToolStripMenuItem)sender);
+            StartNewGame();
+        }
+
+        private void darkToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            isDarkTheme = true;
+
+            UncheckOtherToolStripMenuItems((ToolStripMenuItem)sender);
+            StartNewGame();
         }
     }
 }

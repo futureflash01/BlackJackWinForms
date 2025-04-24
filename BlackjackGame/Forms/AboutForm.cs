@@ -1,4 +1,5 @@
-﻿using DarkModeForms;
+﻿using BlackjackGame.Properties;
+using DarkModeForms;
 using System;
 using System.Drawing;
 using System.Reflection;
@@ -11,7 +12,7 @@ namespace BlackjackGame.Forms
 
         private DarkModeCS dm;
 
-        public AboutForm(string versionLabel)
+        public AboutForm(string versionLabel, bool isDarkMode)
         {
             InitializeComponent();
             this.Text = $"BlackJack Game ({versionLabel})";
@@ -20,16 +21,21 @@ namespace BlackjackGame.Forms
             {
                 ColorMode = DarkModeCS.DisplayMode.DarkMode
             };
+
+            if (isDarkMode)
+            {
+                logoPB.Image = Resources.AppIcon_Dark;
+            }
+
+            else
+            {
+                logoPB.Image = Resources.AppIcon;
+            }
         }
 
         private void okButton_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void AboutForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

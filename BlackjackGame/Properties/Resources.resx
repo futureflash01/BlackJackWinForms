@@ -121,128 +121,260 @@
   <data name="10C" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\10C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="10C_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\10C_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="10D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\10D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="10D_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\10D_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="10H" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\10H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="10H_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\10H_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="10S" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\10S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="10S_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\10S_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2C" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\2C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="2C_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\2C_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\2D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2D_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\2D_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2H" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\2H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="2H_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\2H_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="2S" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\2S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2S_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\2S_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3C" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\3C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="3C_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\3C_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="3D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\3D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3D_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\3D_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3H" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\3H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="3H_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\3H_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="3S" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\3S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3S_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\3S_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4C" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\4C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="4C_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\4C_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="4D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\4D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4D_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\4D_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4H" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\4H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="4H_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\4H_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="4S" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\4S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4S_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\4S_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="5C" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\5C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="5C_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\5C_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="5D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\5D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5D_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\5D_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="5H" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\5H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="5H_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\5H_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="5S" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\5S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5S_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\5S_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="6C" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\6C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="6C_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\6C_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="6D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\6D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6D_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\6D_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="6H" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\6H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="6H_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\6H_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="6S" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\6S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6S_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\6S_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="7C" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\7C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="7C_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\7C_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="7D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\7D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7D_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\7D_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="7H" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\7H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="7H_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\7H_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="7S" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\7S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7S_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\7S_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="8C" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\8C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="8C_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\8C_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="8D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\8D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8D_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\8D_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="8H" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\8H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="8H_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\8H_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="8S" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\8S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8S_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\8S_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="9C" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\9C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="9C_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\9C_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="9D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\9D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9D_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\9D_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="9H" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\9H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="9H_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\9H_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="9S" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\9S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9S_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\9S_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\AC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AC_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\AC_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="AD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\AD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AD_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\AD_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AH" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\AH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AH_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\AH_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="AppIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AppIcon\AppIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppIcon_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AppIcon\AppIcon_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppIcon_Dark_V1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AppIcon\V1-Old\AppIcon_Dark_V1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppIcon_V1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AppIcon\V1-Old\AppIcon_V1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\AS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AS_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\AS_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\Back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\Back_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CardFlip" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sounds\CardFlip.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -253,38 +385,74 @@
   <data name="JC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\JC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="JC_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\JC_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="JD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\JD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JD_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\JD_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="JH" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\JH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="JH_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\JH_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="JS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\JS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JS_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\JS_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\KC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="KC_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\KC_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="KD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\KD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KD_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\KD_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KH" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\KH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="KH_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\KH_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="KS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\KS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KS_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\KS_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="QC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\QC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="QC_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\QC_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="QD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\QD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QD_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\QD_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="QH" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\QH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="QH_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\QH_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="QS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cards\QS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QS_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cards\Dark\QS_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Tie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sounds\Tie.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
