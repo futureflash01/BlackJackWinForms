@@ -41,7 +41,7 @@
             descriptionLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             descriptionLabel.Location = new System.Drawing.Point(299, 12);
             descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(601, 244);
+            descriptionLabel.Size = new System.Drawing.Size(601, 296);
             descriptionLabel.TabIndex = 0;
             descriptionLabel.Text = resources.GetString("descriptionLabel.Text");
             // 
@@ -49,7 +49,7 @@
             // 
             okButton.Cursor = System.Windows.Forms.Cursors.Hand;
             okButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            okButton.Location = new System.Drawing.Point(815, 256);
+            okButton.Location = new System.Drawing.Point(810, 376);
             okButton.Name = "okButton";
             okButton.Size = new System.Drawing.Size(67, 27);
             okButton.TabIndex = 1;
@@ -61,9 +61,9 @@
             // 
             madebyLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 7F, System.Drawing.FontStyle.Bold);
             madebyLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            madebyLabel.Location = new System.Drawing.Point(301, 202);
+            madebyLabel.Location = new System.Drawing.Point(299, 308);
             madebyLabel.Name = "madebyLabel";
-            madebyLabel.Size = new System.Drawing.Size(601, 107);
+            madebyLabel.Size = new System.Drawing.Size(601, 102);
             madebyLabel.TabIndex = 2;
             madebyLabel.Text = resources.GetString("madebyLabel.Text");
             // 
@@ -80,7 +80,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(903, 311);
+            ClientSize = new System.Drawing.Size(903, 419);
             Controls.Add(logoPB);
             Controls.Add(okButton);
             Controls.Add(madebyLabel);
