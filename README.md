@@ -48,6 +48,8 @@ If you or anyone you know struggles with gambling, please consider the NCP Gambl
 This project is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.  
 You're free to use, modify, and distribute it — **as long as credit is given**.
 
+Read the full license: https://creativecommons.org/licenses/by/4.0/
+
 ## 🙏 Credits
 
 - 🎴 **Playing Cards**: [Google Vector Playing Cards](https://code.google.com/archive/p/vector-playing-cards/downloads) (public domain)
