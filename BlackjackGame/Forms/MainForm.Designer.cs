@@ -31,14 +31,15 @@ namespace BlackjackGame.Forms
             lblDealerValue = new Label();
             lblStatus = new Label();
             pnlPlayerArea = new Panel();
+            rtbScoreLabel = new Label();
             pnlDealerArea = new Panel();
             versionLabel = new Label();
             madeByLabel = new Label();
             blackjackMenuStrip = new MenuStrip();
+            aboutToolStripMenuItem = new ToolStripMenuItem();
             gameToolStripMenuItem = new ToolStripMenuItem();
             blackjackToolStripMenuItem = new ToolStripMenuItem();
             rideTheBusToolStripMenuItem = new ToolStripMenuItem();
-            aboutToolStripMenuItem = new ToolStripMenuItem();
             themeToolStripMenuItem = new ToolStripMenuItem();
             changingThemeWillRestartGameToolStripMenuItem = new ToolStripMenuItem();
             defaultToolStripMenuItem = new ToolStripMenuItem();
@@ -46,6 +47,7 @@ namespace BlackjackGame.Forms
             hiddenLabel1 = new Label();
             hiddenLabel2 = new Label();
             hiddenLabel3 = new Label();
+            pnlPlayerArea.SuspendLayout();
             blackjackMenuStrip.SuspendLayout();
             SuspendLayout();
             // 
@@ -131,10 +133,22 @@ namespace BlackjackGame.Forms
             // pnlPlayerArea
             // 
             pnlPlayerArea.BackColor = Color.Transparent;
+            pnlPlayerArea.Controls.Add(rtbScoreLabel);
             pnlPlayerArea.Location = new Point(23, 330);
             pnlPlayerArea.Name = "pnlPlayerArea";
             pnlPlayerArea.Size = new Size(965, 170);
             pnlPlayerArea.TabIndex = 6;
+            // 
+            // rtbScoreLabel
+            // 
+            rtbScoreLabel.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            rtbScoreLabel.ForeColor = Color.LightGreen;
+            rtbScoreLabel.Location = new Point(0, 55);
+            rtbScoreLabel.Name = "rtbScoreLabel";
+            rtbScoreLabel.Size = new Size(965, 25);
+            rtbScoreLabel.TabIndex = 14;
+            rtbScoreLabel.Text = "Score: 0";
+            rtbScoreLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pnlDealerArea
             // 
@@ -152,7 +166,7 @@ namespace BlackjackGame.Forms
             versionLabel.Name = "versionLabel";
             versionLabel.Size = new Size(28, 15);
             versionLabel.TabIndex = 8;
-            versionLabel.Text = "v1.3";
+            versionLabel.Text = "v1.4";
             // 
             // madeByLabel
             // 
@@ -177,6 +191,18 @@ namespace BlackjackGame.Forms
             blackjackMenuStrip.TabIndex = 10;
             blackjackMenuStrip.Text = "menuStrip1";
             // 
+            // aboutToolStripMenuItem
+            // 
+            aboutToolStripMenuItem.BackColor = Color.FromArgb(55, 55, 55);
+            aboutToolStripMenuItem.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            aboutToolStripMenuItem.ForeColor = Color.WhiteSmoke;
+            aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            aboutToolStripMenuItem.Size = new Size(58, 21);
+            aboutToolStripMenuItem.Text = "About";
+            aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
+            aboutToolStripMenuItem.MouseEnter += aboutToolStripMenuItem_MouseEnter;
+            aboutToolStripMenuItem.MouseLeave += aboutToolStripMenuItem_MouseLeave;
+            // 
             // gameToolStripMenuItem
             // 
             gameToolStripMenuItem.BackColor = Color.FromArgb(45, 45, 45);
@@ -192,7 +218,7 @@ namespace BlackjackGame.Forms
             blackjackToolStripMenuItem.BackColor = Color.FromArgb(80, 80, 80);
             blackjackToolStripMenuItem.ForeColor = Color.WhiteSmoke;
             blackjackToolStripMenuItem.Name = "blackjackToolStripMenuItem";
-            blackjackToolStripMenuItem.Size = new Size(180, 22);
+            blackjackToolStripMenuItem.Size = new Size(153, 22);
             blackjackToolStripMenuItem.Text = "Blackjack";
             blackjackToolStripMenuItem.Click += BlackjackToolStripMenuItem_Click;
             // 
@@ -201,21 +227,9 @@ namespace BlackjackGame.Forms
             rideTheBusToolStripMenuItem.BackColor = Color.FromArgb(80, 80, 80);
             rideTheBusToolStripMenuItem.ForeColor = Color.WhiteSmoke;
             rideTheBusToolStripMenuItem.Name = "rideTheBusToolStripMenuItem";
-            rideTheBusToolStripMenuItem.Size = new Size(180, 22);
+            rideTheBusToolStripMenuItem.Size = new Size(153, 22);
             rideTheBusToolStripMenuItem.Text = "Ride the Bus";
             rideTheBusToolStripMenuItem.Click += RideTheBusToolStripMenuItem_Click;
-            // 
-            // aboutToolStripMenuItem
-            // 
-            aboutToolStripMenuItem.BackColor = Color.FromArgb(55, 55, 55);
-            aboutToolStripMenuItem.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            aboutToolStripMenuItem.ForeColor = Color.WhiteSmoke;
-            aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            aboutToolStripMenuItem.Size = new Size(58, 21);
-            aboutToolStripMenuItem.Text = "About";
-            aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
-            aboutToolStripMenuItem.MouseEnter += aboutToolStripMenuItem_MouseEnter;
-            aboutToolStripMenuItem.MouseLeave += aboutToolStripMenuItem_MouseLeave;
             // 
             // themeToolStripMenuItem
             // 
@@ -288,6 +302,7 @@ namespace BlackjackGame.Forms
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 30, 30);
             ClientSize = new Size(1000, 551);
+            Controls.Add(btnHit);
             Controls.Add(lblDealerValue);
             Controls.Add(hiddenLabel3);
             Controls.Add(hiddenLabel2);
@@ -296,7 +311,6 @@ namespace BlackjackGame.Forms
             Controls.Add(versionLabel);
             Controls.Add(lblPlayerValue);
             Controls.Add(lblStatus);
-            Controls.Add(btnHit);
             Controls.Add(btnStand);
             Controls.Add(btnPlayAgain);
             Controls.Add(pnlPlayerArea);
@@ -310,6 +324,7 @@ namespace BlackjackGame.Forms
             StartPosition = FormStartPosition.CenterScreen;
             Text = "BlackJack Game";
             Load += MainForm_Load;
+            pnlPlayerArea.ResumeLayout(false);
             blackjackMenuStrip.ResumeLayout(false);
             blackjackMenuStrip.PerformLayout();
             ResumeLayout(false);
@@ -330,5 +345,6 @@ namespace BlackjackGame.Forms
         private ToolStripMenuItem gameToolStripMenuItem;
         private ToolStripMenuItem blackjackToolStripMenuItem;
         private ToolStripMenuItem rideTheBusToolStripMenuItem;
+        private Label rtbScoreLabel;
     }
 }

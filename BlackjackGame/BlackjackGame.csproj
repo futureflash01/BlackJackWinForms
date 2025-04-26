@@ -6,7 +6,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>Resources\AppIcon\AppIcon.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-    <Version>1.3.0</Version>
+    <Version>1.4.0</Version>
     <Description>BlackJack game in WinForms and C#</Description>
     <PackageIcon>AppIcon.png</PackageIcon>
     <Copyright>FutureFlash</Copyright>
